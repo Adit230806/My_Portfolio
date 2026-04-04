@@ -9,7 +9,7 @@ const Blog = () => {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true });
 
-  const categories = ["ALL", "SUSTAINABILITY", "DESIGN", "URBAN PLANNING"];
+  const categories = ["ALL", "EMBEDDED / IOT", "FULL STACK"];
   const filtered = activeCategory === "ALL"
     ? blogPosts
     : blogPosts.filter(post => post.category === activeCategory);
@@ -26,10 +26,10 @@ const Blog = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span className="text-minimal text-primary mb-4 block">JOURNAL</span>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground mb-6">Insights</h1>
+            <span className="text-minimal text-primary mb-4 block">PROJECTS</span>
+            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground mb-6">My Work</h1>
             <p className="text-muted-foreground text-lg max-w-xl">
-              Exploring the intersection of architecture, design, and human experience.
+              Showcasing my recent technical projects and problem-solving approaches.
             </p>
           </motion.div>
         </div>
@@ -83,9 +83,15 @@ const Blog = () => {
                   </div>
 
                   <div className="flex items-center gap-3 text-minimal text-muted-foreground mb-3">
-                    <span>{post.date}</span>
-                    <span>·</span>
-                    <span>{post.readTime}</span>
+                    {post.tech ? (
+                      <span>{post.tech}</span>
+                    ) : (
+                      <>
+                        <span>{post.date}</span>
+                        <span>·</span>
+                        <span>{post.readTime}</span>
+                      </>
+                    )}
                   </div>
 
                   <h2 className="font-display text-xl lg:text-2xl text-foreground group-hover:text-primary transition-colors mb-3">

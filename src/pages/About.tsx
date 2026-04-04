@@ -3,9 +3,9 @@ import { motion, useInView } from "framer-motion";
 import Navigation from "@/components/Navigation";
 
 const steps = [
-  { num: "01", title: "Research", desc: "Deep understanding of context, culture, and climate" },
-  { num: "02", title: "Collaboration", desc: "Close partnership with clients, engineers, and craftspeople" },
-  { num: "03", title: "Innovation", desc: "Sustainable materials and forward-thinking design solutions" },
+  { num: "01", title: "Problem Solving", desc: "Understanding user needs and breaking down complex problems into simple solutions." },
+  { num: "02", title: "Development", desc: "Building fast, functional, and visually engaging digital experiences." },
+  { num: "03", title: "Optimization", desc: "Continuously improving performance, scalability, and user experience." },
 ];
 
 const AboutPage = () => {
@@ -27,7 +27,7 @@ const AboutPage = () => {
           >
             <span className="text-minimal text-primary mb-4 block">ABOUT</span>
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground mb-6">
-              Design Philosophy
+              How I Work
             </h1>
           </motion.div>
 
@@ -38,23 +38,23 @@ const AboutPage = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                We believe architecture should enhance human experience while respecting
-                the natural environment. Our practice focuses on creating spaces that
-                are both functional and poetic.
+                I design and build digital experiences that are fast, functional,
+                and visually engaging. My focus is on creating clean interfaces and
+                smooth user interactions that feel intuitive and modern.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed mb-12">
-                Founded in 2015, our studio has completed over 200 projects across
-                residential, commercial, and cultural sectors.
+                I have worked on a range of projects, from small personal websites to
+                large-scale applications, and I am always eager to take on new challenges.
               </p>
 
               <div className="grid grid-cols-2 gap-8 pt-8 border-t border-border">
                 <div>
-                  <span className="text-4xl font-display text-primary">200+</span>
+                  <span className="text-4xl font-display text-primary">10+</span>
                   <p className="text-minimal text-muted-foreground mt-2">PROJECTS</p>
                 </div>
                 <div>
-                  <span className="text-4xl font-display text-primary">2015</span>
-                  <p className="text-minimal text-muted-foreground mt-2">FOUNDED</p>
+                  <span className="text-4xl font-display text-primary">1+</span>
+                  <p className="text-minimal text-muted-foreground mt-2">YEARS OF LEARNING</p>
                 </div>
               </div>
             </motion.div>
