@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import heroImage from "@/assets/hero-architecture.jpg";
 
 const Hero = () => {
   return (
@@ -9,7 +8,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat ken-burns"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          style={{ backgroundImage: "url('/images/hero-architecture.jpg')" }}
         />
       </div>
 

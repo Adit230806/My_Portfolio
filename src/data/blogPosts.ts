@@ -26,7 +26,7 @@ A real-time pH monitoring system designed to measure acidity and alkalinity leve
     readTime: "Project",
     category: "EMBEDDED / IOT",
     tech: "Arduino, pH Sensor, Embedded C",
-    image: "/src/assets/PH Meter.png"
+    image: "/projects/ph-meter.png"
   },
   {
     id: "finomaly-finance-tracker",
@@ -42,7 +42,7 @@ A smart finance management web app that helps users track expenses, analyze spen
     readTime: "Project",
     category: "FULL STACK",
     tech: "React, Node.js, MongoDB",
-    image: "/src/assets/Finomaly.png"
+    image: "/projects/finomaly.png"
   },
 
 

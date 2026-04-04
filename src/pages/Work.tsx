@@ -3,9 +3,6 @@ import { motion, useInView } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
 
 const Work = () => {
   const [activeCategory, setActiveCategory] = useState("ALL");
@@ -13,12 +10,12 @@ const Work = () => {
   const heroInView = useInView(heroRef, { once: true });
 
   const projects = [
-    { image: project1, title: "Minimal Residence", location: "New York", category: "RESIDENTIAL", area: "450 SQM", year: "2024", description: "A contemporary home focusing on light, space, and material honesty." },
-    { image: project2, title: "Corporate HQ", location: "London", category: "COMMERCIAL", area: "1200 SQM", year: "2023", description: "Modern office space emphasizing collaboration and natural elements." },
-    { image: project3, title: "Cultural Center", location: "Tokyo", category: "CULTURAL", area: "800 SQM", year: "2023", description: "Public architecture that bridges tradition with contemporary design." },
-    { image: project1, title: "Urban Loft", location: "Berlin", category: "RESIDENTIAL", area: "180 SQM", year: "2024", description: "Industrial heritage meets contemporary living." },
-    { image: project2, title: "Gallery Space", location: "Paris", category: "CULTURAL", area: "600 SQM", year: "2022", description: "Minimalist gallery designed to showcase art without distraction." },
-    { image: project3, title: "Boutique Hotel", location: "Milan", category: "HOSPITALITY", area: "2400 SQM", year: "2023", description: "Luxury hospitality redefined through architectural restraint." },
+    { image: "/projects/project-1.jpg", title: "Minimal Residence", location: "New York", category: "RESIDENTIAL", area: "450 SQM", year: "2024", description: "A contemporary home focusing on light, space, and material honesty." },
+    { image: "/projects/project-2.jpg", title: "Corporate HQ", location: "London", category: "COMMERCIAL", area: "1200 SQM", year: "2023", description: "Modern office space emphasizing collaboration and natural elements." },
+    { image: "/projects/project-3.jpg", title: "Cultural Center", location: "Tokyo", category: "CULTURAL", area: "800 SQM", year: "2023", description: "Public architecture that bridges tradition with contemporary design." },
+    { image: "/projects/project-1.jpg", title: "Urban Loft", location: "Berlin", category: "RESIDENTIAL", area: "180 SQM", year: "2024", description: "Industrial heritage meets contemporary living." },
+    { image: "/projects/project-2.jpg", title: "Gallery Space", location: "Paris", category: "CULTURAL", area: "600 SQM", year: "2022", description: "Minimalist gallery designed to showcase art without distraction." },
+    { image: "/projects/project-3.jpg", title: "Boutique Hotel", location: "Milan", category: "HOSPITALITY", area: "2400 SQM", year: "2023", description: "Luxury hospitality redefined through architectural restraint." },
   ];
 
   const categories = ["ALL", "RESIDENTIAL", "COMMERCIAL", "CULTURAL", "HOSPITALITY"];

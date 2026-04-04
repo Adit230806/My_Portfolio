@@ -1,13 +1,10 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
 
 const projects = [
-  { image: project1, title: "Minimal Residence", category: "RESIDENTIAL", year: "2024", span: "md:col-span-2 md:row-span-2" },
-  { image: project2, title: "Corporate HQ", category: "COMMERCIAL", year: "2023", span: "md:col-span-1 md:row-span-1" },
-  { image: project3, title: "Cultural Center", category: "CULTURAL", year: "2023", span: "md:col-span-1 md:row-span-1" },
+  { image: "/projects/project-1.jpg", title: "Minimal Residence", category: "RESIDENTIAL", year: "2024", span: "md:col-span-2 md:row-span-2" },
+  { image: "/projects/project-2.jpg", title: "Corporate HQ", category: "COMMERCIAL", year: "2023", span: "md:col-span-1 md:row-span-1" },
+  { image: "/projects/project-3.jpg", title: "Cultural Center", category: "CULTURAL", year: "2023", span: "md:col-span-1 md:row-span-1" },
 ];
 
 const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: number }) => {
