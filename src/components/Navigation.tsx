@@ -23,11 +23,10 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-background/60 backdrop-blur-xl border-b border-border/50"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
+        ? "bg-background/60 backdrop-blur-xl border-b border-border/50"
+        : "bg-transparent"
+        }`}
     >
       <div className="container mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
         <Link to="/" className="font-display text-xl tracking-tight text-foreground">
@@ -40,11 +39,10 @@ const Navigation = () => {
             <Link
               key={link.href}
               to={link.href}
-              className={`text-minimal story-link transition-colors duration-300 ${
-                location.pathname === link.href
-                  ? "text-primary"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
+              className={`text-minimal story-link transition-colors duration-300 ${location.pathname === link.href
+                ? "text-primary"
+                : "text-muted-foreground hover:text-foreground"
+                }`}
             >
               {link.label}
             </Link>
