@@ -129,23 +129,6 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Newsletter */}
-      <section className="py-32 bg-card">
-        <div className="container mx-auto px-6 lg:px-12 text-center">
-          <h2 className="font-display text-4xl md:text-6xl text-foreground mb-6">Stay Informed</h2>
-          <p className="text-muted-foreground text-lg mb-10 max-w-lg mx-auto">Subscribe for the latest insights on architecture and design</p>
-          <div className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-6 py-4 bg-background border border-border text-foreground placeholder:text-muted-foreground rounded-sm focus:outline-none focus:ring-1 focus:ring-primary"
-            />
-            <button className="px-8 py-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-minimal rounded-sm">
-              SUBSCRIBE
-            </button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
