@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 const navLinks = [
-  { label: "WORK", href: "/work" },
+  { label: "CERTIFICATIONS", href: "/work" },
   { label: "SKILLS", href: "/services" },
   { label: "ABOUT", href: "/about" },
   { label: "PROJECTS", href: "/blog" },
@@ -55,7 +55,7 @@ const Navigation = () => {
             to="/contact"
             className="magnetic-btn inline-flex items-center gap-2 px-6 py-3 text-minimal border border-primary/40 rounded-full text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
           >
-            START A PROJECT
+            CONTACT ME
             <ArrowUpRight size={14} />
           </Link>
         </div>
@@ -106,7 +106,7 @@ const Navigation = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className="inline-flex items-center gap-2 text-primary text-minimal"
                 >
-                  START A PROJECT <ArrowUpRight size={14} />
+                  CONTACT ME <ArrowUpRight size={14} />
                 </Link>
               </motion.div>
             </div>

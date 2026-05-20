@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import { blogPosts } from "@/data/blogPosts";
+import { ArrowUpRight } from "lucide-react";
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
@@ -73,6 +74,32 @@ const BlogPost = () => {
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
+
+            {/* Project Links */}
+            {(post.github || post.liveUrl) && (
+              <div className="flex items-center gap-4 mb-12">
+                {post.liveUrl && (
+                  <a
+                    href={post.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 text-minimal border border-primary/40 rounded-full text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                  >
+                    VIEW PROJECT <ArrowUpRight size={14} />
+                  </a>
+                )}
+                {post.github && (
+                  <a
+                    href={post.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 text-minimal border border-border rounded-full text-muted-foreground hover:text-foreground hover:border-foreground transition-all duration-300"
+                  >
+                    GITHUB <ArrowUpRight size={14} />
+                  </a>
+                )}
+              </div>
+            )}
             
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">

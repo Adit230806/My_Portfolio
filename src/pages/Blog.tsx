@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
 import Navigation from "@/components/Navigation";
+import { ArrowUpRight } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
 
 const Blog = () => {
@@ -100,6 +101,28 @@ const Blog = () => {
 
                   <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">{post.excerpt}</p>
                 </Link>
+
+                {(post.github || post.liveUrl) && (
+                  <div className="flex items-center gap-3 mt-5">
+                    <Link
+                      to={`/blog/${post.id}`}
+                      className="text-minimal px-4 py-2 border border-primary/40 rounded-full text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 inline-flex items-center gap-2"
+                    >
+                      VIEW PROJECT <ArrowUpRight size={12} />
+                    </Link>
+                    {post.github && (
+                      <a
+                        href={post.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={e => e.stopPropagation()}
+                        className="text-minimal px-4 py-2 border border-border rounded-full text-muted-foreground hover:text-foreground hover:border-foreground transition-all duration-300 inline-flex items-center gap-2"
+                      >
+                        GITHUB <ArrowUpRight size={12} />
+                      </a>
+                    )}
+                  </div>
+                )}
               </motion.article>
             ))}
           </div>

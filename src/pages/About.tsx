@@ -47,16 +47,6 @@ const AboutPage = () => {
                 large-scale applications, and I am always eager to take on new challenges.
               </p>
 
-              <div className="grid grid-cols-2 gap-8 pt-8 border-t border-border">
-                <div>
-                  <span className="text-4xl font-display text-primary">10+</span>
-                  <p className="text-minimal text-muted-foreground mt-2">PROJECTS</p>
-                </div>
-                <div>
-                  <span className="text-4xl font-display text-primary">1+</span>
-                  <p className="text-minimal text-muted-foreground mt-2">YEARS OF LEARNING</p>
-                </div>
-              </div>
             </motion.div>
 
             <div className="space-y-0">

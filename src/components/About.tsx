@@ -37,16 +37,6 @@ const About = () => {
                 From building AI-driven anomaly detectors to designing pH sensor circuits, I love blending electronics with cutting-edge machine learning and data science to create meaningful solutions.
               </p>
 
-              <div className="mt-12 grid grid-cols-2 gap-8">
-                <div>
-                  <span className="text-4xl font-display text-primary">200+</span>
-                  <p className="text-minimal text-muted-foreground mt-2">PROJECTS</p>
-                </div>
-                <div>
-                  <span className="text-4xl font-display text-primary">2015</span>
-                  <p className="text-minimal text-muted-foreground mt-2">FOUNDED</p>
-                </div>
-              </div>
             </motion.div>
           </div>
 
